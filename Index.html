@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Box Shadow Generator</title>
+</head>
+
+<body>
+<div class="box_div">
+<input type="color" value="#0000ff" class="color_picker">
+<input type="color" id="color_picker2" oninput="boxshadow()">        
+  <div class="output_div"></div>  
+
+<div class="slider_div">
+ <input type="range" value="10" min="0" max="200" id="horizontal" oninput="boxshadow()" value="10">
+  <label id="h_label">H</label>      
+ <input type="range" id="vertical" oninput="boxshadow()" value="10">
+  <label id="v_label">V</label>      
+ <input type="range" id="blur" oninput="boxshadow()" value="10">
+  <label id="blur_label">Blur</label>      
+ <input type="range" id="spread" oninput="boxshadow()" value="10">
+  <label for="">Spread</label>      
+</div> 
+
+<input type="checkbox" id="inset" oninput="boxshadow()">
+ <div class="shadow_css">
+<p>box-shadow:0px 0px 19px 0px #000000</p> </div>
+</div>
+</body>
+
+</html>
